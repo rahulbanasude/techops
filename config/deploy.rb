@@ -3,6 +3,7 @@ lock "3.7.1"
 
 set :application, "techops"
 set :repo_url, "git@github.com:rahulbanasude/techops.git"
+set :passenger_restart_with_touch, true
 set :deploy_to, '/home/deploy/techops'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
