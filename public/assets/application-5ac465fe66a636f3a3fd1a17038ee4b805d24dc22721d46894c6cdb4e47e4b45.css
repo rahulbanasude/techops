@@ -1,0 +1,245 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 17, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+body {
+  background: #232323 url(bg.png) repeat;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Make HTML 5 elements display block-level for consistent styling */
+/* line 25, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+header, nav, article, section, aside, footer, address {
+  display: block;
+}
+
+/* line 28, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 960px;
+  min-height: 720px;
+  margin: 0 auto;
+  text-align: center;
+  background: url(bg-light.png) no-repeat;
+  padding-top: 20px;
+}
+
+@font-face {
+  font-family: 'LeagueGothicRegular';
+  src: url("fonts/League_Gothic-webfont.eot");
+  src: url("fonts/League_Gothic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/League_Gothic-webfont.woff") format("woff"), url("fonts/League_Gothic-webfont.ttf") format("truetype"), url("fonts/League_Gothic-webfont.svg#LeagueGothicRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 48, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+h1 {
+  text-transform: uppercase;
+  color: #77dff1;
+  font-family: LeagueGothicRegular;
+  font-size: 80px;
+  font-weight: lighter;
+  text-shadow: 0px 2px 0px #000;
+  margin: 30px 0 0 0;
+}
+
+/* line 58, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+h2 {
+  text-transform: uppercase;
+  color: #77dff1;
+  font-family: LeagueGothicRegular;
+  font-size: 24px;
+  font-weight: lighter;
+  text-shadow: 0px 2px 0px #000;
+  margin: 15px 0 15px 20px;
+  text-align: left;
+}
+
+/* line 69, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+p {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  text-shadow: 0 -2px 0 #000;
+}
+
+/* line 76, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.hr {
+  display: block;
+  border: none;
+  width: 960px;
+  height: 2px;
+  background: url(divider.png);
+  margin: 10px 0;
+}
+
+/* line 85, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.clear {
+  clear: both;
+}
+
+/* line 89, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.progress {
+  height: 110px;
+  margin: 80px 0;
+  background: url(progress-container.png) no-repeat;
+  position: relative;
+}
+
+/* line 96, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.txt-launch-day-hat {
+  background: url(txt-launch-day-hat.png) no-repeat;
+  width: 117px;
+  height: 159px;
+  position: absolute;
+  top: -120px;
+  right: -45px;
+}
+
+/* line 105, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.txt-launch-day {
+  background: url(txt-launch-day.png) no-repeat;
+  width: 112px;
+  height: 110px;
+  position: absolute;
+  top: -80px;
+  right: -40px;
+}
+
+/* line 114, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.progress-bar {
+  height: 43px;
+  background: #72dbf1 url(progress-bar.png) repeat-x;
+  position: absolute;
+  top: 14px;
+  left: 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+/* line 124, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.progress-bar-container {
+  width: 930px;
+  height: 70px;
+  margin-left: 13px;
+  position: relative;
+}
+
+/* line 131, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.mailing-list h2 {
+  width: 400px;
+  float: left;
+}
+
+/* line 136, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.mailing-list form {
+  display: block;
+  width: 450px;
+  float: right;
+  margin: 5px 0 0 0;
+}
+
+/* line 143, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.mailing-list input[type=text] {
+  width: 280px;
+  height: 16px;
+  background: url(form-bg.png) no-repeat;
+  border: none;
+  color: #c9c9c9;
+  font-size: 14px;
+  padding: 15px 10px;
+  margin: 0;
+}
+
+/* line 154, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.mailing-list input[type=submit] {
+  width: 90px;
+  height: 44px;
+  background: url(btn-subscribe.png) no-repeat;
+  border: none;
+  text-indent: -5000px;
+  cursor: pointer;
+  margin: 0 0 0 -10px;
+  text-transform: capitalize;
+}
+
+/* line 165, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.mailing-list input[type=submit]:hover {
+  background-position: 0 -44px;
+}
+
+/* line 169, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.mailing-list input[type=submit]:active {
+  background-position: 0 -88px;
+}
+
+/* line 173, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.mailing-list input[type=text]:focus {
+  outline: none;
+}
+
+/* line 177, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.tipsy {
+  margin-bottom: 25px;
+  font-size: 18px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  background-repeat: no-repeat;
+  background-image: url(tipsy.png);
+  font-family: 'LeagueGothicRegular';
+  text-transform: uppercase;
+}
+
+/* line 178, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.tipsy-inner {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  max-width: 400px;
+  text-align: right;
+  -webkit-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 20px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* line 179, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.tipsy-inner {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* line 180, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.tipsy-north {
+  background-position: top center;
+}
+
+/* line 181, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.tipsy-south {
+  background-position: bottom center;
+}
+
+/* line 182, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.tipsy-east {
+  background-position: right center;
+}
+
+/* line 183, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.tipsy-west {
+  background-position: left center;
+}
+
+/* line 184, /home/rahul/techops/app/assets/stylesheets/application.css.scss */
+.tipsy-container {
+  border: 1px solid green;
+}
