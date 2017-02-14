@@ -1,0 +1,25 @@
+<div class="navbar-wrapper">
+<div class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      <li class="<%= is_active?(root_path)%>"><%= link_to "Home",  root_path %></li>
+      <li class="<%= is_active?(pages_events_path)%>"><%= link_to "Events",  pages_events_path %></li>
+      <li class="<%= is_active?(pages_contact_path)%>"><%= link_to "Contact Us", pages_contact_path %></li>
+      <li class="<%= is_active?(pages_registration_path)%>"><%= link_to "Registration", pages_registration_path%></li>
+
+    </ul>
+
+  </div>
+</div>
+</div>
+</div>

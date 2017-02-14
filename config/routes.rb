@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+  resources :registrations
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   get 'pages/index'
   root 'pages#index'
+  get 'pages/events'
+  get 'pages/contact'
+  get 'pages/registration'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

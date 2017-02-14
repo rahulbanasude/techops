@@ -1,0 +1,55 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+*= require bootstrap_and_overrides
+ *= require_self
+ *= require fancybox
+ *= require_tree .
+
+*/
+body{
+  /* Background Gradient for Analagous Colors */
+
+    background-color: #800040;
+    /* For WebKit (Safari, Chrome, etc) */
+    background: #800040 -webkit-gradient(linear, left top, left bottom, from(#801500), to(#800040)) no-repeat;
+    /* Mozilla,Firefox/Gecko */
+    background: #800040 -moz-linear-gradient(top, #801500, #800040) no-repeat;
+    /* IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#801500, endColorstr=#800040) no-repeat;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#801500, endColorstr=#801500)" no-repeat;
+
+
+
+color: white;
+}
+
+.events{
+  margin: 8em 4em 4em 4em;
+}
+
+.navbar-inverse {
+    font-size: large;
+    padding: 1em;
+    background-color: black;
+  }
+
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
