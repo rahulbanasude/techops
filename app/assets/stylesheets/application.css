@@ -25,13 +25,16 @@ body{
 
 color: white;
 }
+.navbar-brand{
+  padding: 0 !important;
+}
 
 .events{
   margin: 5em 4em 4em 4em;
 }
 
 .navbar-inverse {
-    font-size: large;
+  font-size: 1.5em;
     padding: 1em;
     background-color: black;
   }
