@@ -14,12 +14,17 @@
 }
 .wrapper{
  text-align :center;
- margin-top :8em;
+ margin-top :4em;
  margin-bottom :4em;
  color: white;
  img{
    width: -moz-available;
    max-width: 500px;
+ }
+ .para{
+   text-align: justify;
+width: 50%;
+margin: auto;
  }
 }
 
