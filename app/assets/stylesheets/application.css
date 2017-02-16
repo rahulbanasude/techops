@@ -35,6 +35,19 @@ color: white;
     padding: 1em;
     background-color: black;
   }
+  .navbar-toggle {
+    z-index:3;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 /* latin-ext */
