@@ -17,7 +17,7 @@ end
   private
 
     def registration_params
-      params.require(:registration).permit(:name, :email, :number, :college)
+      params.require(:registration).permit(:name, :email, :number, :college, :document)
     end
 
 end

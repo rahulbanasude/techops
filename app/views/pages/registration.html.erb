@@ -1,5 +1,5 @@
 <div class="form">
-<%= form_for(@registration) do |f| %>
+<%= form_for @registration,url: registrations_path,html: { multipart: true } do |f| %>
   <% if @registration.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
@@ -28,6 +28,7 @@
     <%= f.label :college %><br>
     <%= f.text_field :college %>
   </div>
+  <%= f.file_field :document %>
   <div class="actions">
     <%= f.submit %>
   </div>
