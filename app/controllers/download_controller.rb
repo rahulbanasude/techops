@@ -6,7 +6,7 @@ class DownloadController < ApplicationController
   end
 
   def doc
-    send_file Rails.root.join('private', 'RULES_REGULATIONS.docx'), :type=>"application/doc", :x_sendfile=>true
+    send_file Rails.root.join('private', 'Registration form.docx'), :type=>"application/doc", :x_sendfile=>true
   end
 
 end
