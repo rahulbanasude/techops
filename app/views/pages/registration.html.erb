@@ -1,4 +1,17 @@
-<div class="form">
+<div class="wrapper">
+  <h1>Dont have the form yet?</h1>
+  <h4>
+    Get it from here <%= link_to 'Download', download_doc_path,class: "btn btn-sm btn-default", target: "_blank" %>
+  </h4>
+
+<br>
+<br>
+<h1>Have the form?</h1>
+<h4>Fill in the details and upload it here</h4>
+
+</div>
+
+
 <%= form_for @registration,url: registrations_path,html: { multipart: true } do |f| %>
   <% if @registration.errors.any? %>
     <div id="error_explanation">
@@ -11,18 +24,22 @@
       </ul>
     </div>
   <% end %>
+  <div class="container-fluid">
+      <div class="row">
+<div class=".col-sm-4">
 
-  <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
-  </div>
-  <div class="field">
+</div>
+
+<div class=".col-sm-4">
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
-  <div class="field">
+<div class=".col-sm-4">
     <%= f.label :number %><br>
     <%= f.text_field :number %>
+  </div>
   </div>
   <div class="field">
     <%= f.label :college %><br>
@@ -33,4 +50,5 @@
     <%= f.submit %>
   </div>
 <% end %>
+
 </div>

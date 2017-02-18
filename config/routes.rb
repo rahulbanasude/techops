@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'download/index'
+
+  get 'download/pdf'
+
+  get 'download/doc'
+
   resources :registrations
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
