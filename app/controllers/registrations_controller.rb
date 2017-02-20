@@ -7,12 +7,15 @@ class RegistrationsController < ApplicationController
 
   def create
     @registration = Registration.new(registration_params)
+    respond_to do |format|
   if @registration.save
-    redirect_to pages_registrations_path, notice: "Thank you for Registering"
+          format.html { redirect_to pages_registration_path, notice: 'Registration was successful' }
+
   else
     render 'new', alert: "Registration failed."
 
   end
+end
 end
   private
 

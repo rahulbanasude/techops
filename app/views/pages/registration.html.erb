@@ -24,19 +24,22 @@
       </ul>
     </div>
   <% end %>
+  <div class="form">
+
+
   <div class="container-fluid">
       <div class="row">
-<div class=".col-sm-4">
+  <div class="field">
 
     <%= f.label :name %><br>
     <%= f.text_field :name %>
 </div>
 
-<div class=".col-sm-4">
+  <div class="field">
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
-<div class=".col-sm-4">
+  <div class="field">
     <%= f.label :number %><br>
     <%= f.text_field :number %>
   </div>
@@ -44,11 +47,15 @@
   <div class="field">
     <%= f.label :college %><br>
     <%= f.text_field :college %>
-  </div>
+
+  <div class="field">
   <%= f.file_field :document %>
+  </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Submit" %>
   </div>
 <% end %>
 
 </div>
+</div>
+<p id="notice"><%= notice %></p>
