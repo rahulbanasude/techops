@@ -15,17 +15,33 @@ background: white;
 text-align: center;
   }
 }
+.container{
+  .form{
+      background: white;
+      width: 80%;
+      text-align: center;
+      color: black;
+      margin: auto;
+.field{
+  margin-top: 1em;
+}
+.actions{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#registration_document{
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+      }
+  }
 
+}
 
 .events{
   margin-bottom: 3em;
 }
-.form{
-  color: black;
-  .field{
-    padding: 1em;
-  }
-}
+
 .wrapper{
  text-align :center;
  margin-top :4em;
