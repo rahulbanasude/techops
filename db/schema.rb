@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170217070851) do
+ActiveRecord::Schema.define(version: 20170325101201) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accounts", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "expense"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "bill_file_name"
+    t.string   "bill_content_type"
+    t.integer  "bill_file_size"
+    t.datetime "bill_updated_at"
+  end
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"

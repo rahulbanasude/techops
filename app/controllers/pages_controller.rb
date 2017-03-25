@@ -2,6 +2,14 @@ class PagesController < ApplicationController
   def index
   end
 
+  def gallery
+
+  end
+
+  def  results
+
+  end
+
   def contact
 
   end
